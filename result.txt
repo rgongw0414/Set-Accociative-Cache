@@ -1,0 +1,20 @@
+Block size = 16 (Byte)
+Cache size = 1024K (Byte)
+Set degree = 1
+Miss rate = 0.533880
+
+Block size = 16 (Byte)
+Cache size = 1024K (Byte)
+Set degree = 2
+Miss rate = 0.533280
+
+Block size = 16 (Byte)
+Cache size = 1024K (Byte)
+Set degree = 4
+Miss rate = 0.533280
+
+Block size = 16 (Byte)
+Cache size = 1024K (Byte)
+Set degree = 8
+Miss rate = 0.533280
+
