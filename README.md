@@ -26,9 +26,9 @@ trace.txt：檔案中每一行代表處理器給予Cache Controller的記憶體�
 0x13F0E848
 0x186E70E0
 ```
-cache_size：Cache的大小，單位為KByte
-block_size：每個Cache Block的大小，單位為Word
-set_degree：一個set中的cache block個數
+cache_size：Cache的大小，單位為KByte<br> 
+block_size：每個Cache Block的大小，單位為Word<br> 
+set_degree：一個set中的cache block個數<br> 
 
 輸出格式：執行完畢後，輸出Miss Rate。
 
