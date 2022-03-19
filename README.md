@@ -4,14 +4,18 @@ Computer Architecture Lab1 project
 ---
 ### 目的：了解Cache Controller接受到處理器所給予的記憶體位置時，當Cache的空間大小和區塊大小不同時，如何影響到Miss Rate。
 
-#### 說明：實作一個Set Associative機制的Cache
+#### 說明：實作一個Set Associative機制的Cache，其中可在def main可手動調整變數BS_BlockSize, CS_CacheSize: <br>
+    BS_BlockSize: Cache Block size, default set to 16 Byte <br>
+    CS_CacheSize: Cache的大小，default set to 1024 KByte <br>
+    block_size: 每個Cache Block的大小，單位為Word <br> 
+-  If the cache set is full, replace the least recent used block, by LRU algorithm. <br> 
 
-#### 其中，在def main可手動調整變數: <br>
-    BS_BlockSize (Cache Block size, default: 16 Byte) <br>
-    CS_CacheSize (Cache的大小，default: 1024
-#### input (trace.txt) 說明：
-trace.txt：檔案中每一行代表處理器給予Cache Controller的記憶體位置，格式如下：
-
+#### How to use: <br>
+```bash
+python3 cache.py 
+```
+#### input(hexadecimal addresses) :
+for example, 在trace.txt中每一行代表processor給予Cache Controller的記憶體位置，格式如下：
 ```bash
 0x0A985540
 0x0A985548
@@ -26,21 +30,10 @@ trace.txt：檔案中每一行代表處理器給予Cache Controller的記憶體�
 0x13F0E848
 0x186E70E0
 ```
-cache_size：Cache的大小，單位為KByte<br> 
-block_size：每個Cache Block的大小，單位為Word<br> 
-set_degree：一個set中的cache block個數<br> 
 
-輸出格式：執行完畢後，輸出Miss Rate。
+#### output: result.txt(miss rate in different set_degree w.r.t trace.txt) <br> 
 
-input: trace.txt (16進位addresses) <br> 
-output: result.txt (miss rate in different set_degree w.r.t trace.txt) <br> 
-
-How to use: <br>
-```bash
-python3 cache.py 
-```
-
-and in terminal, it should be like: 
+- in terminal, it should be like: 
 ```bash
 There are 65536 Cache Blocks
 1-way associative cache, with 65536 sets.
@@ -67,7 +60,7 @@ Miss rate: 0.533280
 -
 ```
 
-sample output (of output.txt):
+sample output(of output.txt):
 ```bash
 Block size = 16 (Byte)
 Cache size = 1024K (Byte)
