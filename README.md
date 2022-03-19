@@ -37,7 +37,7 @@ output: output.txt (clock by clock status of Register_result_state, Resevation_S
 
 How to use: <br>
 ```bash
-python3 trace.py 
+python3 cache.py 
 ```
 
 and in terminal, it should be like: 
