@@ -33,7 +33,7 @@ set_degree：一個set中的cache block個數<br>
 輸出格式：執行完畢後，輸出Miss Rate。
 
 input: trace.txt (16進位addresses) <br> 
-output: output.txt (clock by clock status of Register_result_state, Resevation_Station, Load/Store_Buffer and Memory) <br> 
+output: result.txt (miss rate in different set_degree w.r.t trace.txt) <br> 
 
 How to use: <br>
 ```bash
