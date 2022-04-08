@@ -1,14 +1,11 @@
-Set Associative Cache
-=
-Computer Architecture Lab1 project
----
-### 目的：了解Cache Controller接受到處理器所給予的記憶體位置時，當Cache的空間大小和區塊大小不同時，如何影響到Miss Rate。
+## Set Associative Cache (Computer Architecture Lab1)
 
 #### 說明：實作一個Set Associative機制的Cache，其中可在def main可手動調整變數BS_BlockSize, CS_CacheSize: <br>
+- Cache Controller接受processor所給予的記憶體位置時，當cache size和block size不同時，如何影響Miss Rate <br>
     BS_BlockSize: Cache Block size, default set to 16 Byte <br>
     CS_CacheSize: Cache的大小，default set to 1024 KByte <br>
     block_size: 每個Cache Block的大小，單位為Word <br> 
--  If the cache set is full, replace the least recent used block, by LRU algorithm. <br> 
+-  Use LRU algorithm to determine which block to be replaced, if the cache set is full. <br> 
 
 #### How to use: <br>
 ```bash
