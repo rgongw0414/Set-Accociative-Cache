@@ -11,7 +11,7 @@
 ```bash
 python3 cache.py 
 ```
-#### input(hexadecimal addresses) :
+#### input (hexadecimal addresses) :
 for example, 在trace.txt中每一行代表processor給予Cache Controller的記憶體位置，格式如下：
 ```bash
 0x0A985540
@@ -28,7 +28,7 @@ for example, 在trace.txt中每一行代表processor給予Cache Controller的記
 0x186E70E0
 ```
 
-#### output: result.txt(miss rate in different set_degree w.r.t trace.txt) <br> 
+#### output: result.txt (miss rate in different set_degree w.r.t trace.txt) <br> 
 
 - in terminal, it should be like: 
 ```bash
@@ -57,7 +57,7 @@ Miss rate: 0.533280
 -
 ```
 
-sample output(of output.txt):
+sample output (of output.txt):
 ```bash
 Block size = 16 (Byte)
 Cache size = 1024K (Byte)
